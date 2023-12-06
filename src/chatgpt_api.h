@@ -3,6 +3,6 @@
 
 #include "postgres.h"
 
-Datum call_chatgpt(text *api_key, text *prompt);
+Datum call_chatgpt_api(text *api_key, char *prompt);
 
 #endif

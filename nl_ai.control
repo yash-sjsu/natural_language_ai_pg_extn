@@ -1,4 +1,4 @@
 comment = 'PostgreSQL extension for natural language'
 default_version = '1.0'
-module_pathname='$libdir/natural_language_ai.so'
+module_pathname='$libdir/nl_ai.dylib'
 relocatable=false

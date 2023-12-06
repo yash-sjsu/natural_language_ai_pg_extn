@@ -8,6 +8,6 @@
 PG_MODULE_MAGIC;
 #endif
 
-PG_FUNCTION_INFO_V1(natural_language_ai);
+PG_FUNCTION_INFO_V1(nl_ai);
 
 #endif
