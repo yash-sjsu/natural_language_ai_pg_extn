@@ -100,3 +100,26 @@ This contribution focused on architecting a PostgreSQL extension, NL_AI, to empo
 **Error Handling and Security**: Implemented comprehensive error handling mechanisms to address potential issues during query execution—additionally, integrated security measures to prevent SQL injection risks, ensuring the integrity of the database.
 
 **Readability and Usability**: Prioritized readability and usability in the design of NL_AI, making it accessible for users with varying levels of SQL proficiency. The extension aims to simplify the interaction with databases, especially for users less familiar with SQL syntax.
+
+### Project report generation and Presentation/Demo
+
+#### Contributors
+
+- Brian Tran (Project report and presentation)
+- Rahul Thakur (Project report and presentation)
+- Yashwanth Thummala (Project Demo)
+
+In this role, the primary responsibility was to create a comprehensive project report and develop materials for an effective presentation/demo showcasing the NL_AI PostgreSQL extension. This involved synthesizing technical details, design choices, and implementation insights into a coherent narrative for both written and visual communication.
+
+#### Key Achievements:
+
+**Project Report**: Compiled a detailed project report that provides an in-depth overview of the NL_AI PostgreSQL extension. The report covers aspects such as project objectives, design considerations, implementation details, challenges faced, and solutions devised. It serves as a comprehensive documentation resource for developers, contributors, and users.
+
+**Technical Documentation**: Authored technical documentation for the NL_AI extension, outlining installation procedures, usage guidelines, and code documentation. Ensured that the technical documentation aligned with industry standards and facilitated a smooth onboarding process for everyone.
+
+**Presentation Development**: Designed an engaging and informative presentation deck for the project. The presentation strategically highlights key features, benefits, and the innovative integration of ChatGPT with PostgreSQL for natural language interactions. Visual aids and demonstrations are incorporated to enhance understanding.
+
+**Live Demo Preparation**: Orchestrated the preparation of a live demonstration showcasing the NL_AI extension in action. The live demo effectively illustrates the practical application of natural language queries in a database context, emphasizing the user-friendly and intuitive nature of the extension.
+
+
+
