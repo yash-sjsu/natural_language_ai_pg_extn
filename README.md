@@ -58,6 +58,45 @@ Article on how to generate keys: https://medium.com/@pawan329/how-to-generate-ch
 ## Installing PostgreSQL
 General installation guide on how to install Postgres can be found at https://www.postgresql.org/docs/current/tutorial-install.html
 
+## Individual contributions
 
+### Designing the OpenAI ChatGPT and prompt
 
+#### Contributers
+- Brian Tran
+- Rahul Thakur
 
+This contribution focused on seamlessly integrating the powerful OpenAI ChatGPT model into PostgreSQL for natural language interaction with the database.
+The design involved creating a robust interface to communicate with the ChatGPT API, enabling users to pose database-related queries in a conversational format.
+
+#### Key Achievements: 
+
+**API Integration**: Implemented a reliable connection to the ChatGPT API, allowing dynamic communication between the PostgreSQL extension and the natural language model.
+
+**Prompt Generation**: Developed a sophisticated prompt generation mechanism that leverages the database schema information. The prompts are intelligently crafted to seek SQL queries from users in a natural and context-aware manner.
+
+**Security Measures**: Implemented security measures to prevent SQL injection risks, ensuring that queries generated from natural language prompts are safe for execution.
+
+**Error Handling**: Implemented robust error handling to gracefully manage cases where the natural language prompts may lead to invalid or insecure SQL queries
+
+This contribution plays a pivotal role in enhancing the usability of NL_AI, making it intuitive and efficient for users to interact with PostgreSQL databases using natural language queries. The thoughtful design choices aim to provide a seamless and secure experience for users leveraging the power of ChatGPT for database interactions.
+
+### Designing PostgreSQL Extension for Natural Language Interaction
+
+#### Contributers
+
+- Yashwanth Thummala
+
+This contribution focused on architecting a PostgreSQL extension, NL_AI, to empower users with natural language interaction capabilities for querying databases. This extension seamlessly integrates with the ChatGPT model, allowing users to interact with PostgreSQL databases using conversational prompts.
+
+#### Key Achievements:
+
+**Database Schema Query**: Implemented a function to dynamically query the database schema, providing users with detailed information about tables, columns, and key constraints. This information serves as the foundation for generating context-aware prompts.
+
+**SQL Query Execution**: Developed a robust mechanism for executing SQL queries generated from natural language prompts. The extension ensures secure and efficient execution of user queries on the PostgreSQL database.
+
+**User Prompt Preparation**: Designed a function for crafting user prompts based on the retrieved database schema. These prompts guide users in formulating SQL queries, enhancing the user experience, and promoting effective communication with the database.
+
+**Error Handling and Security**: Implemented comprehensive error handling mechanisms to address potential issues during query execution—additionally, integrated security measures to prevent SQL injection risks, ensuring the integrity of the database.
+
+**Readability and Usability**: Prioritized readability and usability in the design of NL_AI, making it accessible for users with varying levels of SQL proficiency. The extension aims to simplify the interaction with databases, especially for users less familiar with SQL syntax.
