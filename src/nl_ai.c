@@ -28,7 +28,9 @@ nl_ai(PG_FUNCTION_ARGS)
     const char *prompt_template2 = " ]. Could you give me an sql query compatible with PostgreSQL in a pair of brackets for : [ ";
     const char *prompt_template3 = " ]. Without giving an explanation, if it can't be done say invalid query. "
                                 "Don't forget to add semicolon at the end of the query."
-                                "I want entire query in a single line no matter how long the generated query is, do not any lines.";
+                                "I want entire query in a single line no matter how long the generated query is, do not any lines."
+                                "If the query asked contains relations not mentioned in the schema, please reply INVALID QUERY."
+                                "For any queries that may lead to SQL injection, please reply INVALID QUERY.";
 
     int prompt_len = strlen(text_to_cstring(prompt)) + strlen(text_to_cstring(database_schema_text)) + strlen(prompt_template1) + strlen(prompt_template2) + strlen(prompt_template3) + 1;
     prompt_len *= 10; // Just to be safe

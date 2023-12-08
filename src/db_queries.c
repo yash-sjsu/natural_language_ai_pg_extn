@@ -26,7 +26,7 @@ query_database_schema() {
 
     // elog(INFO, "connected to database, to query schema");
 
-    // Your query to fetch schema, table, column information, and key constraints
+    // Query to fetch schema, table, column information, and key constraints
     query = "SELECT t.table_schema, t.table_name, c.column_name, "
             "CASE WHEN tc.constraint_type = 'PRIMARY KEY' THEN 'PK' ELSE NULL END AS pk "
             "FROM information_schema.tables t "
@@ -108,7 +108,7 @@ execute_query(text *query_text) {
     // Convert the input text* to a C string
     query = text_to_cstring(query_text);
 
-    elog(INFO, "Executing query: %s", query);
+    // elog(INFO, "Executing query: %s", query);
 
     // remove string '\' followed by 'n' from the query and replace them with a space
     char *ptr = strstr(query, "\\n");
