@@ -9,6 +9,11 @@ Before using this extension, ensure that you have the following:
 - ChatGPT API key for interaction with the natural language model.
 - CURL library installed.
 
+## Installing PostgreSQL
+General installation guide on how to install Postgres can be found at https://www.postgresql.org/docs/current/tutorial-install.html
+
+PostgreSQL should be installed and setup correctly before you start compiling or running this project.
+
 ## Installation
 
 1. Build the extension:
@@ -35,7 +40,6 @@ To execute an SQL query using natural language:
 SELECT nl_ai('your_api_key', 'your_prompt');
 ```
 
-
 ### Example
 
 ```SQL
@@ -54,9 +58,6 @@ Installing PostgreSQL in the dev environment is essential for the project to com
 Open AI API keys can be created or found at https://platform.openai.com/api-keys
 
 Article on how to generate keys: https://medium.com/@pawan329/how-to-generate-chat-gpt-api-key-daace2acc032
-
-## Installing PostgreSQL
-General installation guide on how to install Postgres can be found at https://www.postgresql.org/docs/current/tutorial-install.html
 
 ## Individual contributions
 
@@ -121,5 +122,9 @@ In this role, the primary responsibility was to create a comprehensive project r
 
 **Live Demo Preparation**: Orchestrated the preparation of a live demonstration showcasing the NL_AI extension in action. The live demo effectively illustrates the practical application of natural language queries in a database context, emphasizing the user-friendly and intuitive nature of the extension.
 
+## How to import the sample school data
+This project has a SQL data file `school.sql` which can be used to import school database into PostgreSQL database.
+Please use pg_restore tool to do so.
+Documentation can be found at: https://snapshooter.com/learn/import-export-postgresql-database#:~:text=Export%20a%20PostgreSQL%20Database%20with,or%20schemas%20to%20back%20up.
 
 
